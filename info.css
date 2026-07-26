@@ -1,0 +1,191 @@
+/* =========================================
+   RESET DASAR (Agar rapi di semua browser)
+========================================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    /* Background gradasi pink pucat ke biru awan */
+    background: linear-gradient(135deg, #fff0f3 0%, #e0fbfc 100%);
+    color: #4a4e69; /* Warna teks abu-abu keunguan agar nyaman dibaca */
+    line-height: 1.6;
+    min-height: 100vh;
+}
+
+/* =========================================
+   HEADER & NAVIGASI
+========================================= */
+header {
+    background: #a2d2ff; /* Biru pastel */
+    padding: 30px 20px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(162, 210, 255, 0.4); 
+}
+
+.link-header {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 36px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+nav {
+    margin: 45px 0;
+    text-align: center;
+}
+
+.link-nav {
+    text-decoration: none;
+    color: #4a4e69;
+    background: #ffc8dd; /* Pink pastel */
+    padding: 12px 28px;
+    margin: 0 12px;
+    border-radius: 8px;
+    border: 2px solid transparent;
+    display: inline-block;
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0 4px 10px rgba(255, 200, 221, 0.5);
+}
+
+.link-nav:hover {
+    background: #bde0fe;
+    color: #4a4e69;
+    border: 2px solid #a2d2ff;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(189, 224, 254, 0.6);
+}
+
+/* =========================================
+   KONTEN UTAMA (Teks, Judul, Link)
+========================================= */
+main {
+    text-align: center;
+    padding: 40px 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 48px;
+    color: #ffafcc; /* Pink cerah */
+    margin-bottom: 25px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.05);
+}
+
+h2 {
+    font-size: 32px;
+    color: #a2d2ff; /* Biru pastel untuk sub-judul di info.html */
+    margin-top: 50px;
+    margin-bottom: 25px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.05);
+}
+
+p {
+    font-size: 22px;
+    color: #5c636a;
+    margin: 15px 0;
+}
+
+.text-big {
+    font-size: 26px;
+    color: #ffafcc;
+    margin-bottom: 35px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.05);
+}
+
+.link-text {
+    color: #a2d2ff;
+    text-decoration: none;
+    border-bottom: 2px dashed #a2d2ff; /* Garis bawah estetik */
+    padding-bottom: 2px;
+    transition: all 0.3s ease;
+}
+
+.link-text:hover {
+    color: #ffafcc;
+    border-bottom: 2px solid #ffafcc;
+}
+
+/* =========================================
+   LIST / DAFTAR (ul di about.html, ol di info.html)
+========================================= */
+ul, ol {
+    padding: 0;
+    margin: 30px auto 50px auto; 
+    max-width: 500px; 
+}
+
+ul {
+    list-style-type: none; /* Hilangkan titik */
+}
+
+ol {
+    text-align: left; /* Teks rata kiri agar mudah dibaca */
+    list-style-position: inside; /* Angka masuk ke dalam kotak */
+}
+
+ul li, ol li {
+    background: #ffc8dd; /* Kotak list warna pink */
+    color: #4a4e69;
+    font-size: 20px;
+    padding: 15px 25px;
+    margin-bottom: 15px;
+    border-radius: 12px; /* Sudut melengkung */
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(255, 200, 221, 0.4);
+    transition: all 0.3s ease;
+}
+
+ul li:hover, ol li:hover {
+    transform: translateY(-3px);
+    background: #bde0fe; /* Berubah biru saat di-hover */
+    box-shadow: 0 6px 15px rgba(189, 224, 254, 0.6);
+}
+
+/* =========================================
+   GAMBAR UTAMA
+========================================= */
+main img {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    max-width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(255, 175, 204, 0.4); 
+    border: 3px solid #ffffff; /* Bingkai ala foto polaroid */
+    transition: transform 0.4s ease;
+}
+
+main img:hover {
+    transform: scale(1.02); /* Sedikit zoom saat di-hover */
+}
+
+/* =========================================
+   FOOTER & SOSIAL MEDIA
+========================================= */
+footer {
+    background: #a2d2ff;
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 60px;
+    box-shadow: 0 -4px 15px rgba(162, 210, 255, 0.4);
+}
+
+.social img {
+    width: 45px;
+    height: 45px;
+    margin: 0 15px;
+    transition: 0.3s ease-in-out;
+    border: none;
+    box-shadow: none;
+}
+
+.social img:hover {
+    transform: scale(1.15) rotate(10deg); /* Animasi ikon mutar sedikit */
+}
